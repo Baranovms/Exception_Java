@@ -77,7 +77,7 @@ public class Data {
     public void SaveDataEnter() {
 
         DataEnter();
-        String file = "" + lastName + ".txt";
+        String file = "HW_3/" + lastName + ".txt";
         try (FileWriter fw = new FileWriter(file)) {
             fw.write("<" + firstName + "> " + "<" + lastName + "> " + "<" + middleName + "> " + "<" + yearOfBirth + "> " + "<" + numberPhone + ">\n");
             System.out.print("Successfully written data to the file");
